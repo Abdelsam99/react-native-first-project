@@ -12,6 +12,8 @@ export const converTemperatureTo = (unit, value) => {
 export const isIceTemperature=(value, unit)=>{
     if(unit===UNITS.celcius){
         return value<=0
+    }else if(unit===UNITS.faranheit){
+        return value >=0
     }else{
         return value<=32
     }

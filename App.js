@@ -32,7 +32,7 @@ export default function App() {
       const isColBackground = isIceTemperature(inputValue, currentUnit);
       setBackground(isColBackground ? cold : hot);
     }
-  }, [inputValue]);
+  }, [inputValue,currentUnit]);
 
   return (
     <ImageBackground source={background} style={s.container}>
